@@ -33,7 +33,7 @@ class TestGames(TestCase):
         """
         Test that the API returns a list of games
         """
-        response = self.client.get(reverse("games:game-list"))
+        response = self.client.get(reverse("game-list"))
         self.assertContains(response, "Game 1 Description")
         self.assertContains(response, "Game 2 Notes")
 
@@ -41,6 +41,6 @@ class TestGames(TestCase):
         """
         Test that the API returns a list of games
         """
-        response = self.client.get(reverse("games:game-detail", [1]))
+        response = self.client.get(reverse("game-detail", [1]))
         self.assertContains(response, "Game 1 Description")
         self.assertContains(response, "Game 1 Notes")
