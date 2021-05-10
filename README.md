@@ -1,5 +1,6 @@
 # Django REST Framework Examples
 
+[![Python Tests](https://github.com/cyface/simplest-django-rest-framework-example/actions/workflows/run_tests.yml/badge.svg)](https://github.com/cyface/simplest-django-rest-framework-example/actions/workflows/run_tests.yml)
 
 This repository is a companion to ["The Simplest Django REST Framework Example"](https://timlwhite.medium.com/the-simplest-django-rest-framework-example-c67cecc88400) article.
 
