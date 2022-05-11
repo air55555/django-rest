@@ -1,7 +1,7 @@
-FROM python:3
-ENV PYTHONUNBUFFERED 1
-RUN mkdir /app
-WORKDIR /app
-COPY requirements.txt /app/
-RUN pip install -r requirements.txt
-COPY . /app/
+FROM python:3.8
+RUN mkdir /home/myblog
+WORKDIR /home/myblog
+COPY ./ /home/myblog/
+RUN pip install -r /home/myblog/requirements.txt
+EXPOSE 8000
+ENTRYPOINT ["python","manage.py","runserver","0.0.0.0:8000"]
