@@ -16,7 +16,7 @@ SECRET_KEY = "django-insecure-^*rgod&!_8)_+yrgl5)h@7#in%&wxm=+mmy7@9sq3xi0jppodn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djn-prod-rest-django-nwdtz2.mo2.mogenius.io']
 
 # Application definition
 
